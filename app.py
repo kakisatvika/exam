@@ -7,8 +7,8 @@ def index():
 def submit():
     username=request.form.get('username')
     email=request.form.get('email')
-    year=request.form.get('year')
-    phone=request.form.get('phone')
-    return render_template('result.html',name=username,email=email,year=year,phone=phone)
+    number=request.form.get('number')
+    age=request.form.get('age')
+    return render_template('result.html',name=username,email=email,number=number,age=age)
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=5001,debug=True)
