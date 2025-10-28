@@ -13,8 +13,9 @@ pipeline{
                 bat 'docker run mypythonflaskapp'
             }
         }
-        pipeline{
-            success{
+    }
+    post{
+        success{
                 echo 'Deployment Successful!'
             }
             failure{
@@ -22,4 +23,3 @@ pipeline{
             }
         }
     }
-}
