@@ -10,7 +10,7 @@ pipeline{
         stage('Run Docker Container'){
             steps{
                 echo 'Running Docker Container...'
-                bat 'docker run -d -p 5000:5000 --name flaskapp mypythonflaskapp'
+                bat 'docker run mypythonflaskapp'
             }
         }
         pipeline{
